@@ -36,17 +36,17 @@
     </nav>
 
     <header class="jumbotron">
-        <div class="container">
+        <div class="container" style="background-color: #ae3421">
             <div class="row row-header">
-                <div class="col-12 col-sm-6">
+                <div class="col-12 col-sm-6" style="background-color: #bf12ad">
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm-3 align-self-center d-flex justify-content-center">
+                <div class="col-12 col-sm-3 align-self-center d-flex justify-content-center" style="color: #333;">
                     <img src="img/logo.png" class="img-fluid">
                 </div>  
                 <div class="col-12 col-sm-3 align-self-center">
-                    <button type="button" class="btn btn-block btn-sm btn-warning col-12"><a href="#Reserve" class="text-dark">Reserve Table</a></button>
+                    <button type="button" class="btn btn-warning col-12" data-target="#Reserve"><a href="#Reserve" class="text-dark">Reserve Table</a></button>
                 </div>             
             </div>
         </div>
@@ -54,10 +54,10 @@
 <!-- Our Lipsmacking Culinary Creations-->
     <div class="container">
         <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-4 order-sm-last col-md-3">
+            <div class="col-12 col-sm-4 order-sm-last col-md-3" style="background-color: #bad342">
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
-            <div class="col col-sm order-sm-first col-md">
+            <div class="col col-sm order-sm-first col-md" style="background-color: #dab421">
                 <div class="media">
                     <img class="d-flex mr-3 img-thumbnail align-self-center" 
                          src="img/uthappizza.png" alt="uthappizza">
@@ -70,10 +70,10 @@
         </div>
 <!-- This Month's Promotions -->
         <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-4 col-md-3">
+            <div class="col-12 col-sm-4 col-md-3" style="background-color: #beeabe">
                 <h3>This Month's Promotions</h3>
             </div>
-            <div class="col col-sm col-md">
+            <div class="col col-sm col-md" style="background-color: #cab569">
                 <div class="media">
                     <div class="media-body">
                         <h2>Weekend Grand Buffet <span class="badge badge-danger">NEW</span> </h2>
@@ -86,10 +86,10 @@
         </div>
 <!-- Meet our Culinary Team -->
         <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-4 order-sm-last col-md-3">
+            <div class="col-12 col-sm-4 order-sm-last col-md-3" style="background-color: #569bac">
                 <h3>Meet our Culinary Specialists</h3>
             </div>
-            <div class="col col-sm order-sm-first col-md">
+            <div class="col col-sm order-sm-first col-md" style="background-color: #a867aa">
                 <div class="media">
                     <img class="d-flex mr-3 img-thumbnail align-self-center" 
                         src="img/alberto.png" alt="alberto">
@@ -106,17 +106,17 @@
             <div class="col-12 col-sm-2"></div>
 
             <div class="col-12 col-sm-8">
-                <div class="card" id="Reserve">
+                <div class="card">
                     <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
-                    <div class="card-body" >
+                    <div class="card-body" id="Reserve">
                         <form class="align-items-center">         
                     
 <!--description list Row 1-->
                             <dl class="row">
-                                <dt class="col-12 col-sm-2 col-form-label"> 
+                                <dt class="col-12 col-sm-3 col-form-label"> 
                                     <label for="dateandtime">Number of Guests</label>
                                 </dt>
-                                <dd class="col-12 col-sm-7">
+                                <dd class="col-12 col-sm-8">
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
                                         <label class="form-check-label" for="inlineRadio1">1</label>
@@ -143,33 +143,33 @@
                                     </div>                            
                                 </dd>
                                 <dd>
-                                    <div class="col-sm-3"></div>
+                                    <div class="col-sm-1"></div>
                                 </dd>                            
                             </dl> 
 <!--description list Row 2-->
                             <dl class="row">
-                                <dt class="col-12 col-sm-2"> 
+                                <dt class="col-12 col-sm-3"> 
                                     <label for="dateandtime">Date and Time</label>
                                 </dt>
 
-                                <dd class="col-12 col-sm-3">
+                                <dd class="col-12 col-sm-4">
                                    <input type="text" class="form-control" id="date" name="date" placeholder="Date">
                                 </dd>
-                                <dd class="col-12 col-sm-3">
+                                <dd class="col-12 col-sm-4">
                                     <input type="text" class="form-control" id="time" name="time" placeholder="Time">
                                 </dd> 
-                                <dd class="col-12 col-sm-3"></dd>                                 
+                                <dd class="col-12 col-sm-1"></dd>                                 
                             </dl>
 <!--description list Row 3-->
                             <dl class="row">
-                                <dt class="col-12 col-sm-2 col-form-label">
+                                <dt class="col-12 col-sm-3 col-form-label">
                                     <div class="col-12 col-sm-3"></div>
                                 </dt>
                                 <dd>
-                                    <div class="col-12 col-sm-6">
+                                    <div class="col-12 col-sm-7">
                                         <button class="btn btn-primary">Reserve</button> 
                                     </div>  
-                                    <div class="col-12 col-sm-3"></div>
+                                    <div class="col-12 col-sm-2"></div>
                                 </dd>
                             </dl>
 
@@ -186,7 +186,7 @@
     <footer>
         <div class="container">
             <div class="row footer">             
-                <div class="col-4 offset-1 col-sm-2">
+                <div class="col-4 offset-1 col-sm-2" style="border: 3px solid #8eb0a2">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
                         <li><a href="#">Home</a></li>
@@ -195,7 +195,7 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
-                <div class="col-7 col-sm-5">
+                <div class="col-7 col-sm-5" style="border: 3px solid #8eeea2">
                     <h5>Our Address</h5>
                     <address>
 		              121, Clear Water Bay Road<br>
@@ -206,7 +206,7 @@
 		              <i class="fa fa-envelope fa-lg"></i> <a href="mailto:confusion@food.net">confusion@food.net</a>
 		           </address>
                 </div>
-                <div class="col-12 col-sm-4 align-self-center">
+                <div class="col-12 col-sm-4 align-self-center" style="border: 3px solid #aa80a2">
                     <div class="text-center">
                         <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a>
                         <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
@@ -218,7 +218,7 @@
                 </div>
            </div>
            <div class="row justify-content-center">             
-                <div class="col-auto">
+                <div class="col-auto" style="border: 3px solid #1e0b0e">
                     <p>© Copyright 2018 Ristorante Con Fusion</p>
                 </div>
            </div>
