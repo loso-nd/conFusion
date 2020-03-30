@@ -5,6 +5,7 @@ body{
 
 /*www.android.com* - Where we can find colors to add to our page. 
 We should go back to my index.HTML page and then from the navbar I should remove this bg-primary. */
+/* Applied on all corresponding pages */
 .navbar-dark{
 	background-color: #512DA8; 
 }
@@ -37,5 +38,12 @@ We should go back to my index.HTML page and then from the navbar I should remove
 	font-size: 80%;
 	margin:  0px;
 	color: #0f0f0f;
+}
 
+/* Aboutus.htmml */
+.tab-content{
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	padding: 10px;
 }
