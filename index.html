@@ -39,7 +39,7 @@
         </div>       
     </nav>
 
-    <!--Creating a Modal, All modal writting code should be placed at the top -->
+    <!--Creating a Modal for login, All modal writting code should be placed at the top -->
     <div id="longinModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <!--Modal Content -->
@@ -81,8 +81,112 @@
                 
             </div>
             
+        </div>     
+    </div>
+
+    <!--Creating a Modal for Reservation -->
+    <div id="reserveModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!--Modal Content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Reserve A Table</h4>
+                    <button type="button" class="close" data-dismiss="modal" >&times;</button>    
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group row">
+                            <div class="form-group col-12 col-sm-3">  
+                                <label for="numberofguest">Number of Guests</label>
+                            </div> 
+
+                            <div class="form-group col-12 col-sm-7">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" 
+                                                value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">1</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" 
+                                                value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">2</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" 
+                                                value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">3</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" 
+                                                value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">4</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" 
+                                                value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">5</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" 
+                                                value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">6</label>
+                                    </div>                                                                                                  
+                            </div> 
+
+                            <div class="col-12 col-sm-3"></div>                                                   
+                        </div>    
+
+                        <div class="form-group row">
+                            <div class="form-group col-12 col-sm-3">
+                                <label for="numberofguest">Section</label>
+                            </div>  
+
+                            <div class="form-group col-12 col-sm-7">                               
+                                <div class="btn-group btn-group-toggle" data-toggle="button">
+                                    <label class="btn btn-success active">
+                                        <input type="radio" name="options" id="option1" 
+                                                autocomplete="off" checked>Non-Smoking
+                                    </label>
+                                    <label class="btn btn-danger">
+                                        <input type="radio" name="options" id="option2" 
+                                            autocomplete="off">Smoking
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-2"></div> 
+                        </div>
+
+                        <div class="form-row col-form-label pt-2">
+                                <div class="form-group col-12 col-sm-3">
+                                    <label for="dateandtime">Date and Time</label>
+                                </div> 
+
+                            
+                                <div class="form-group col-12 col-sm-3">
+                                    <input type="text" class="form-control" id="date" name="date" placeholder="Date">
+                                </div>
+                                <div class="form-group col-12 col-sm-3">
+                                    <input type="text" class="form-control" id="time" name="date" placeholder="Time">                    
+                                </div>
+                        </div>
+
+                        <div class="form-row col-form-label pt-4">
+                                <div class="col-12 col-sm-3"></div>
+
+                                <div class="col-12 col-sm-6">
+                                    <button class="btn btn-secondary">Cancel</button>  
+                                    <button class="btn btn-primary">Reserve</button>  
+                                </div>
+
+                                <div class="col-12 col-sm-3"></div>  
+                        </div>
+                   
+                    </form>
+                </div>                
+            </div>
+
         </div>
-        
     </div>
 
     <header class="jumbotron">
@@ -98,13 +202,14 @@
                 <div class="col-12 col-sm-3 align-self-center">
         <!--button type="button" class="btn btn-block btn-sm btn-warning col-12"><a href="#Reserve" class="text-dark">Reserve Table</a></button-->
         <!--Using html to style the content of the popover-->
-                    <a role="button" class="btn btn-block nav-link btn-warning" data-toggle="tooltip" data-html="true" 
-                        title="Or Call us at <br><strong>+852 12345678</strong>" data-placement="bottom" href="#Reserve">Reserve Table</a>
+        <!-- Remove the href="#Reserve" | data-html="true" | data-toggle="tooltip" title="Or Call us" data-placement="bottom" -->
+                    <a role="button" class="btn btn-block nav-link btn-warning"  
+                        data-toggle="modal" data-target="#reserveModal" href="#reserveModal">Reserve Table</a>
                 </div>             
             </div>
         </div>
     </header>
-<!-- Our Lipsmacking Culinary Creations-->
+
     <div class="container">
 
         <!-- Adding a Row for the Carousel -->
@@ -157,11 +262,10 @@
                   
                 </div>
                 
-            </div>
-            
+            </div>  
         </div>
 
-
+<!-- Culinary Creations -->
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Our Lipsmacking Culinary Creations</h3>
@@ -177,6 +281,7 @@
                 </div>
             </div>
         </div>
+
 <!-- This Month's Promotions -->
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 col-md-3">
@@ -193,6 +298,7 @@
                 </div>
             </div>
         </div>
+
 <!-- Meet our Culinary Team -->
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
@@ -210,6 +316,7 @@
                 </div>
             </div>
         </div>
+
 <!-- Reserve a Table -->
         <div class="row row-content">
             <div class="col-12 col-sm-2"></div>
@@ -217,15 +324,15 @@
             <div class="col-12 col-sm-8">
                 <div class="card" id="Reserve">
                     <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
-                    <div class="card-body" >
+                    <div class="card-body">
                         <form class="align-items-center">         
                     
 <!--description list Row 1-->
-                            <dl class="row">
-                                <dt class="col-12 col-sm-3 col-form-label"> 
-                                    <label for="dateandtime">Number of Guests</label>
-                                </dt>
-                                <dd class="col-12 col-sm-7">
+                            <div class="form-group row">
+                                <div class="col-12 col-sm-3 col-form-label"> 
+                                    <label for="numberofguest">Number of Guests</label>
+                                </div>
+                                <div class="col-12 col-sm-7">
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
                                         <label class="form-check-label" for="inlineRadio1">1</label>
@@ -250,37 +357,37 @@
                                         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option4">
                                         <label class="form-check-label" for="inlineRadio4">6</label>
                                     </div>                            
-                                </dd>
-                                <dd>
-                                    <div class="col-sm-3"></div>
-                                </dd>                            
-                            </dl> 
-<!--description list Row 2-->
-                            <dl class="row">
-                                <dt class="col-12 col-sm-3"> 
-                                    <label for="dateandtime">Date and Time</label>
-                                </dt>
+                                </div>
+                                
+                                <div class="col-12 col-sm-3"></div>                                                      
+                            </div> 
 
-                                <dd class="col-12 col-sm-3">
+<!--description list Row 2-->
+                            <div class="form-group row">
+                                <div class="col-12 col-sm-3"> 
+                                    <label for="dateandtime">Date and Time</label>
+                                </div>
+
+                                <div class="col-12 col-sm-3">
                                    <input type="text" class="form-control" id="date" name="date" placeholder="Date">
-                                </dd>
-                                <dd class="col-12 col-sm-3">
+                                </div>
+                                <div class="col-12 col-sm-3">
                                     <input type="text" class="form-control" id="time" name="time" placeholder="Time">
-                                </dd> 
-                                <dd class="col-12 col-sm-3"></dd>                                 
-                            </dl>
+                                </div> 
+                                
+                                <div class="col-12 col-sm-3"></div>                                
+                            </div>
+
 <!--description list Row 3-->
-                            <dl class="row">
-                                <dt class="col-12 col-sm-3 col-form-label">
-                                    <div class="col-12 col-sm-3"></div>
-                                </dt>
-                                <dd>
-                                    <div class="col-12 col-sm-6">
-                                        <button class="btn btn-primary">Reserve</button> 
-                                    </div>  
-                                    <div class="col-12 col-sm-3"></div>
-                                </dd>
-                            </dl>
+                            <div class="form-group row pt-4">
+                                <div class="col-12 col-sm-3"></div>
+
+                                <div class="col-12 col-sm-6">
+                                    <button class="btn btn-primary">Reserve</button>  
+                                </div>
+
+                                <div class="col-12 col-sm-3"></div>  
+                            </div>
 
                         </form>
                     </div>
@@ -339,11 +446,15 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <!--adding in the JS component for tooltip component/ Searches for the attribute tooltip and executes -->
-    <script >
-        $(document).ready(function(){
-            $('[data-toggle="tooltip"]').tooltip();
+    <!--script >
+       /* $(document).ready(function(){
+            $('.button('toggle')[data-toggle="tooltip"]').tooltip();
         });
-    </script>
+
+        $(document).ready(function(){
+            $().buttons('toggle');
+        })*/
+    </script-->
 </body>
 
 </html>
