@@ -62,3 +62,10 @@ We should go back to my index.HTML page and then from the navbar I should remove
 	left: 0;
 	min-height: 300px;
 }
+
+#carouselButton {
+	right: 0px;
+	bottom: 0px;
+	position: absolute;
+	z-index: 1;
+}
