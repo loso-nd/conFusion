@@ -1,5 +1,4 @@
-// Add & Define Scss variables into the file:
-//note all variables are defined w/ a '$'
+// Add and Define the following Scss variables into the file:
 $lt-gray: #ddd;
 $background-dark: #512DA8;
 $background-light: #9575CD;
@@ -8,15 +7,15 @@ $background-pale: #D1C4E9;
 // Height variables
 $carousel-item-height: 300px;
 
-// Add a Mixin
+
+//Scss Mixins
 @mixin zero-margin($pad-up-dn, $pad-left-right) {
 	margin:0px auto;
 	padding: $pad-up-dn $pad-left-right;
 }
 
-// Using the variables and Mixin class that we defined above add the following row classes to the file:
-// Note the use of the variables and the mixin with various parameters in defining the classes
 
+/* Using the variables and Mixin class that we defined earlier, add the following row classes to the file: */
 .row-header{
     @include zero-margin(0px,0px);
 }
@@ -60,10 +59,9 @@ body{
     padding: 10px;
 }
 
-/* Nesting Selectors
-Next we add a carousel class to illustrate the use of nesting of classes in Scss, as follows:
-*/ 
 
+//Nesting Selectors
+/* Next we add a carousel class to illustrate the use of nesting of classes in Scss */
 .carousel {
     background:$background-dark;
 
@@ -83,4 +81,16 @@ Next we add a carousel class to illustrate the use of nesting of classes in Scss
     position: absolute;
     bottom: 0px;
     z-index: 1;
+}
+
+.modal-header{
+	background: $background-dark;
+	color: floralwhite;
+		.close{
+				color: floralwhite;
+		}
+}
+
+.modal-body{
+	background: $background-pale;
 }

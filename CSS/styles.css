@@ -1,7 +1,4 @@
-/* Add & define less variables */
-/* Using the variables and Mixin class that we defined earlier, add the following row classes to the file
-Note the use of the variables and the mixin with various parameters in defining the classes.
-*/
+/* Using the variables and Mixin class that we defined earlier, add the following row classes to the file: */
 .row-header {
   margin: 0px auto;
   padding: 0px 0px;
@@ -41,9 +38,7 @@ body {
   border-bottom: 1px solid #ddd;
   padding: 10px;
 }
-/* Nesting Selectors
-Next we add a carousel class to illustrate the use of nesting of classes in Less, as follows
-*/
+/* Next we add a carousel class to illustrate the use of nesting of classes in Scss */
 .carousel {
   background: #512DA8;
 }
@@ -61,4 +56,14 @@ Next we add a carousel class to illustrate the use of nesting of classes in Less
   position: absolute;
   bottom: 0px;
   z-index: 1;
+}
+.modal-header {
+  background: #512DA8;
+  color: floralwhite;
+}
+.modal-header .close {
+  color: floralwhite;
+}
+.modal-body {
+  background: #D1C4E9;
 }
