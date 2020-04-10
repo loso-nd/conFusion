@@ -4,26 +4,26 @@
   "description": "This is a website for Ristorante Con Fusion",
   "main": "index.html",
   "scripts": {
-    "start": "npm run lite",
+    "start": "npm run watch:all", // "start": "npm run lite"
     "test": "echo \"Error: no test specified\" && exit 1",
     "lite": "lite-server",
-    "scss": "node-sass -o css/ css/"
+    "scss": "node-sass -o css/ css/",
+    "watch:scss": "onchange 'css/*.scss' -- npm run scss",
+    "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "lite-server": "^2.3.0",
-<<<<<<< HEAD
     "node-sass": "^4.13.1"
-=======
-    "node-sass": "^4.7.2"
->>>>>>> 97d5ac64ed9c4407708e5031b1a78db58f8410b6
   },
   "dependencies": {
     "bootstrap": "^4.4.1",
     "bootstrap-social": "^5.1.1",
     "font-awesome": "^4.7.0",
     "jquery": "^3.4.1",
+    "onchange": "^3.3.0",
+    "parallelshell": "^3.0.2",
     "popper.js": "^1.16.1"
   }
 }
