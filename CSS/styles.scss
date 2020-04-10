@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+// Add and Define the following Scss variables into the file:
+>>>>>>> 97d5ac64ed9c4407708e5031b1a78db58f8410b6
 $lt-gray: #ddd;
 $background-dark: #512DA8;
 $background-light: #9575CD;
@@ -7,12 +11,20 @@ $background-pale: #D1C4E9;
 $carousel-item-height: 300px;
 
 
+<<<<<<< HEAD
+=======
+//Scss Mixins
+>>>>>>> 97d5ac64ed9c4407708e5031b1a78db58f8410b6
 @mixin zero-margin($pad-up-dn, $pad-left-right) {
 	margin:0px auto;
 	padding: $pad-up-dn $pad-left-right;
 }
 
 
+<<<<<<< HEAD
+=======
+/* Using the variables and Mixin class that we defined earlier, add the following row classes to the file: */
+>>>>>>> 97d5ac64ed9c4407708e5031b1a78db58f8410b6
 .row-header{
     @include zero-margin(0px,0px);
 }
@@ -57,6 +69,11 @@ body{
 }
 
 
+<<<<<<< HEAD
+=======
+//Nesting Selectors
+/* Next we add a carousel class to illustrate the use of nesting of classes in Scss */
+>>>>>>> 97d5ac64ed9c4407708e5031b1a78db58f8410b6
 .carousel {
     background:$background-dark;
 
@@ -78,7 +95,10 @@ body{
     z-index: 1;
 }
 
+<<<<<<< HEAD
 //Adding the instructions for the final assignment 4
+=======
+>>>>>>> 97d5ac64ed9c4407708e5031b1a78db58f8410b6
 .modal-header{
 	background: $background-dark;
 	color: floralwhite;
