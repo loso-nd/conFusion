@@ -9,10 +9,14 @@
 
     <!-- Bootstrap CSS -->
     <!-- Specifying is that the bootstrap.min.css file, which contains the CSS classes corresponding to Bootstrap that we have downloaded using NPM to our node_modules folder -->
+
+    <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- endbuild -->
+
     <title>Ristorante Con Fusion</title>
 </head>
 
@@ -450,49 +454,15 @@
         </div>
     </footer>
 
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!--adding in the JS component for tooltip component/ Searches for the attribute tooltip and executes -->
-    <!--script >
-       /* $(document).ready(function(){
-            $('.button('toggle')[data-toggle="tooltip"]').tooltip();
-        });
-
-        $(document).ready(function(){
-            $().buttons('toggle');
-        })*/
-    </script-->
-     <!--adding in the JS component to control play / pause carousel -->
-    <script>
-        $(document).ready(function(){
-            $('#mycarousel').carousel({ interval: 2000 });
-            $('#carouselButton').click(function(){
-               if ($('#carouselButton').children("span").hasClass('fa-pause')){
-                    $('#mycarousel').carousel('pause');
-                    $('#carouselButton').children("span").removeclass('fa-pasue');
-                    $('#carouselButton').children("span").addClass('fa-play');
-                }
-                else if ($('#carouselButton').children("span").hasClass('fa-play')){
-                    $('#mycarousel').carousel('cycle');
-                    $('#carouselButton').children("span").removeclass('fa-play');
-                    $('#carouselButton').children("span").addClass('fa-pause');
-                };
-            });
- 
-        });
-    </script>
-    <script>
-        $(document).ready(function(){
-            $('#reserveButton').click(function(){
-                $("#reserveModal").modal('toggle');
-            });
-            $('#loginButton').click(function(){
-                $("#loginModal").modal('show');
-            });
-        });
-    </script>
+    <script src="js"></script>
+    <!-- endbuild -->
+   
 
      
 </body>

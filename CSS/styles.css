@@ -1,7 +1,5 @@
-<<<<<<< HEAD
-=======
+
 /* Using the variables and Mixin class that we defined earlier, add the following row classes to the file: */
->>>>>>> 97d5ac64ed9c4407708e5031b1a78db58f8410b6
 .row-header {
   margin: 0px auto;
   padding: 0px 0px; }
@@ -39,14 +37,11 @@ body {
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-<<<<<<< HEAD
-  padding: 10px; }
-
-=======
   padding: 10px;
 }
+
 /* Next we add a carousel class to illustrate the use of nesting of classes in Scss */
->>>>>>> 97d5ac64ed9c4407708e5031b1a78db58f8410b6
+
 .carousel {
   background: #512DA8; }
   .carousel .carousel-item {
@@ -61,28 +56,20 @@ body {
   right: 0px;
   position: absolute;
   bottom: 0px;
-<<<<<<< HEAD
-  z-index: 1; }
-
-.modal-header {
-  background: #512DA8;
-  color: floralwhite; }
-  .modal-header .close {
-    color: floralwhite; }
-
-.modal-body {
-  background: #D1C4E9; }
-=======
-  z-index: 1;
+  z-index: 1; 
 }
+
+/*Adding the instructions for the final assignment 4*/
+
 .modal-header {
   background: #512DA8;
   color: floralwhite;
 }
-.modal-header .close {
+
+.close {
   color: floralwhite;
 }
+
 .modal-body {
   background: #D1C4E9;
 }
->>>>>>> 97d5ac64ed9c4407708e5031b1a78db58f8410b6

@@ -1,13 +1,3 @@
-// Adding in the JS component for tooltip component/ Searches for the attribute tooltip and executes -->
-
-       $(document).ready(function(){
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-
-        $(document).ready(function(){
-            $().buttons('toggle');
-        });          
-
 
 // Adding in the JS component to control play | pause carousel */
 
@@ -34,3 +24,15 @@
             });
  
         });
+
+/* Adding in the JS component for tooltip component/ Searches for the attribute tooltip and executes -->
+
+    $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+
+        $(document).ready(function(){
+            $().buttons('toggle');
+        });          
+
+*/
