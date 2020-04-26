@@ -167,7 +167,7 @@ module.exports = function (grunt) {
                 },
                 files: {                                   
                 // Dictionary of files
-                    'dist/index.html': 'dist/index.html',  
+                    'dist/index.html': 'dist/index.html',   
                 // 'destination': 'source'
                     'dist/contactus.html': 'dist/contactus.html',
                     'dist/aboutus.html': 'dist/aboutus.html',
